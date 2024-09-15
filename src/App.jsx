@@ -38,7 +38,7 @@ const App = () => {
 	return (
 		<div>
 			<Description className="container"/>
-			<Options clicks={clicks} updateFeedback={updateFeedback}/>
+			<Options updateFeedback={updateFeedback} totalFeedback={totalFeedback}/>
 			<Feedback good={clicks.good} neutral={clicks.neutral} bad={clicks.bad} totalFeedback={totalFeedback} />
 		</div>
 	)

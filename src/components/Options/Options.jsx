@@ -1,6 +1,6 @@
 
-const Options = ({ clicks, updateFeedback }) => {
-	if (clicks.good === 0 && clicks.neutral === 0 && clicks.bad === 0) {
+const Options = ({updateFeedback, totalFeedback }) => {
+	if (totalFeedback === 0) {
 		return (
 			<>
 				<button onClick={() => updateFeedback('good')}>Good</button>
