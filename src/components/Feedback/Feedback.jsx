@@ -1,4 +1,4 @@
-const Feedback = ({ good=0, neutral=0, bad=0, totalFeedback=0, positivePercentage=0}) => {
+const Feedback = ({ good, neutral, bad, totalFeedback, positivePercentage}) => {
 	return (
         <>
             <div>
@@ -14,7 +14,7 @@ const Feedback = ({ good=0, neutral=0, bad=0, totalFeedback=0, positivePercentag
                 <p>Total: {totalFeedback}</p>
             </div>
             <div>
-                <p>Posititve: {positivePercentage}%</p>
+                <p>Positive: {positivePercentage}%</p>
             </div>
         </>
     )
